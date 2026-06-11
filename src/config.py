@@ -17,7 +17,7 @@ OUTPUT_DIR=ROOT / "outputs"
 
 # Raw dataset paths (UPDATED)
 
-IXI_RAW = Path(r"C:\MTECH\ROP\NII dataset\NII_DATASET_UPDATED\NII_DATASET_UPDATED_1")
+IXI_RAW=Path(r"C:\MTECH\ROP\NII dataset\NII_DATASET_UPDATED\NII_DATASET_UPDATED_1")
 
 TUMOR_RAW = Path(r"C:\MTECH\ROP\multi-modal-mri-and-mask-synthesis-with-conditional-slice-based-ldm-main\Training")
 
