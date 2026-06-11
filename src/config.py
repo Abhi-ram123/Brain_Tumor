@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parents[1]
 DATA_DIR=ROOT / "data"
 PROCESSED_DIR=DATA_DIR / "processed"
 METADATA_DIR=PROCESSED_DIR / "metadata"
-SPLITS_DIR = DATA_DIR / "splits"
+SPLITS_DIR=DATA_DIR / "splits"
 OUTPUT_DIR = ROOT / "outputs"
 
 # ===== IMPORTANT: USE YOUR LOCAL DATASET PATHS =====
