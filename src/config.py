@@ -41,7 +41,7 @@ VAL_RATIO=0.15
 TEST_RATIO=0.15
 
 # Classes
-CLASS_NAMES = [
+CLASS_NAMES=[
     "glioma_tumor",
     "meningioma_tumor",
     "no_tumor",
