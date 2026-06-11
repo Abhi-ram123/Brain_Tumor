@@ -4,7 +4,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 
 # Output directories (these will be created automatically)
-DATA_DIR = ROOT / "data"
+DATA_DIR=ROOT / "data"
 PROCESSED_DIR = DATA_DIR / "processed"
 METADATA_DIR = PROCESSED_DIR / "metadata"
 SPLITS_DIR = DATA_DIR / "splits"
