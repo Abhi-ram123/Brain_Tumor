@@ -26,7 +26,7 @@ TUMOR_RAW=Path(r"C:\MTECH\ROP\multi-modal-mri-and-mask-synthesis-with-conditiona
 # Processed data folders
 IXI_SLICES=PROCESSED_DIR / "ixi_slices"
 TUMOR_PROCESSED=PROCESSED_DIR / "tumor_images_processed"
-SYN_IXI_SLICES = PROCESSED_DIR / "synthetic_ixi"
+SYN_IXI_SLICES=PROCESSED_DIR / "synthetic_ixi"
 DENOISED_TUMOR = PROCESSED_DIR / "tumor_images_denoised"
 
 # Settings
