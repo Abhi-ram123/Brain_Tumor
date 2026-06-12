@@ -37,7 +37,7 @@ MIN_NONZERO_RATIO = 0.10
 
 # Dataset split
 TRAIN_RATIO = 0.70
-VAL_RATIO=0.15
+VAL_RATIO = 0.15
 TEST_RATIO=0.15
 
 # Classes
