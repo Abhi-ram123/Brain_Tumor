@@ -49,7 +49,7 @@ CLASS_NAMES = [
 ]
 
 CLASS_TO_IDX = {name: idx for idx, name in enumerate(CLASS_NAMES)}
-IDX_TO_CLASS={idx: name for name, idx in CLASS_TO_IDX.items()}
+IDX_TO_CLASS = {idx: name for name, idx in CLASS_TO_IDX.items()}
 
 # Create required folders automatically
 for p in [
