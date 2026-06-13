@@ -99,7 +99,7 @@ def main(args):
     csv_name="tumor_classification_denoised.csv" if args.use_denoised else "tumor_classification.csv"
     ds = TumorClassificationDataset(SPLITS_DIR / csv_name, split="test", image_size=IMAGE_SIZE, train=False)
 
-    target_layers=[model.features[-1]]
+    target_layers = [model.features[-1]]
     cam = GradCAM(model=model, target_layers=target_layers)
 
     out_dir = OUTPUT_DIR / "figures" / "gradcam"
