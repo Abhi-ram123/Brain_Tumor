@@ -102,11 +102,11 @@ def main(args):
     target_layers=[model.features[-1]]
     cam = GradCAM(model=model, target_layers=target_layers)
 
-    out_dir=OUTPUT_DIR / "figures" / "gradcam"
+    out_dir = OUTPUT_DIR / "figures" / "gradcam"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     for i in range(min(12, len(ds))):
-        x, y, _=ds[i]
+        x, y, _ = ds[i]
         input_tensor = x.unsqueeze(0).to(device)
 
         grayscale_cam = cam(input_tensor=input_tensor)[0]
