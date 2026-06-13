@@ -78,7 +78,7 @@ from config import SPLITS_DIR, IMAGE_SIZE, OUTPUT_DIR, CLASS_NAMES
 
 
 def build_model(num_classes=4):
-    model = models.densenet121(weights=None)
+    model= models.densenet121(weights=None)
     model.classifier = nn.Linear(model.classifier.in_features, num_classes)
     return model
 
