@@ -84,7 +84,7 @@ def build_model(num_classes=4):
 
 
 def denorm(x: torch.Tensor) -> np.ndarray:
-    x = x.detach().cpu().numpy().transpose(1, 2, 0)
+    x=x.detach().cpu().numpy().transpose(1, 2, 0)
     x = (x * 0.5) + 0.5
     return np.clip(x, 0, 1)
 
