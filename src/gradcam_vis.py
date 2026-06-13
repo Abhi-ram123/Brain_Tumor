@@ -92,7 +92,7 @@ def denorm(x: torch.Tensor) -> np.ndarray:
 def main(args):
     device="cuda" if torch.cuda.is_available() else "cpu"
 
-    model = build_model(num_classes=len(CLASS_NAMES)).to(device)
+    model=build_model(num_classes=len(CLASS_NAMES)).to(device)
     model.load_state_dict(torch.load(args.checkpoint, map_location=device))
     model.eval()
 
