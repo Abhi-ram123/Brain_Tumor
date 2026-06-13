@@ -109,7 +109,7 @@ def main(args):
         x, y, _ = ds[i]
         input_tensor = x.unsqueeze(0).to(device)
 
-        grayscale_cam=cam(input_tensor=input_tensor)[0]
+        grayscale_cam = cam(input_tensor=input_tensor)[0]
         rgb_img = denorm(x)
         vis = show_cam_on_image(rgb_img, grayscale_cam, use_rgb=True)
         vis = cv2.cvtColor(vis, cv2.COLOR_RGB2BGR)
