@@ -96,7 +96,7 @@ def main(args):
     model.load_state_dict(torch.load(args.checkpoint, map_location=device))
     model.eval()
 
-    csv_name = "tumor_classification_denoised.csv" if args.use_denoised else "tumor_classification.csv"
+    csv_name="tumor_classification_denoised.csv" if args.use_denoised else "tumor_classification.csv"
     ds = TumorClassificationDataset(SPLITS_DIR / csv_name, split="test", image_size=IMAGE_SIZE, train=False)
 
     target_layers = [model.features[-1]]
