@@ -106,7 +106,7 @@ def main(args):
     out_dir.mkdir(parents=True, exist_ok=True)
 
     for i in range(min(12, len(ds))):
-        x, y, _ = ds[i]
+        x, y, _=ds[i]
         input_tensor = x.unsqueeze(0).to(device)
 
         grayscale_cam = cam(input_tensor=input_tensor)[0]
